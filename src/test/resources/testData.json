@@ -1,0 +1,12 @@
+{
+  "baseUri": "https://httpbin.org",
+  "auth": {
+    "user": "user",
+    "pass": "pass"
+  },
+  "users": [
+    { "name": "Jane", "job": "SDET" },
+    { "name": "John", "job": "QA Engineer" },
+    { "name": "Alice", "job": "Automation Engineer" }
+  ]
+}

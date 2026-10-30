@@ -1,0 +1,20 @@
+trigger:
+  - main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - task: Maven@4
+    inputs:
+      mavenPomFile: 'pom.xml'
+      goals: 'clean test allure:report'
+      publishJUnitResults: false
+      javaHomeOption: 'JDKVersion'
+      jdkVersionOption: '1.11'
+
+  - task: PublishAllureReport@2
+    inputs:
+      testResultsDir: 'target/allure-results'
+      reportName: 'API Test Report'
+    condition: always() # Publish report even if tests fail

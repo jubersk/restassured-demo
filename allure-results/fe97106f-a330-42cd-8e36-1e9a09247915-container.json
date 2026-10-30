@@ -1,0 +1,1 @@
+{"uuid":"fe97106f-a330-42cd-8e36-1e9a09247915","name":"ResponseExtractionTest","children":["f78fc95b-fdb9-48f2-86f8-088a32630108"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1792654042026,"stop":1792654042026}],"afters":[],"start":1792654036450,"stop":1792654043039}
